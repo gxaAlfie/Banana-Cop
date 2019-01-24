@@ -2585,7 +2585,7 @@ Rails/Validation:
 
 Security/Eval:
   Description: 'The use of eval represents a serious security risk.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.47'
 
 Security/JSONLoad:
@@ -2611,7 +2611,7 @@ Security/MarshalLoad:
 
 Security/Open:
   Description: 'The use of Kernel#open represents a serious security risk.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.53'
   Safe: false
 
