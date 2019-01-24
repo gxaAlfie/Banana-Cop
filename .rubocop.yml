@@ -348,7 +348,7 @@ Layout/BlockAlignment:
 
 Layout/BlockEndNewline:
   Description: 'Put end statement of multiline block on its own line.'
-  Enabled: false
+  Enabled: true
   VersionAdded: '0.49'
 
 Layout/CaseIndentation:
@@ -397,7 +397,7 @@ Layout/ClosingParenthesisIndentation:
 
 Layout/CommentIndentation:
   Description: 'Indentation of comments.'
-  Enabled: false
+  Enabled: true
   VersionAdded: '0.49'
 
 Layout/ConditionPosition:
@@ -440,10 +440,10 @@ Layout/ElseAlignment:
 
 Layout/EmptyComment:
   Description: 'Checks empty comment.'
-  Enabled: false
+  Enabled: true
   VersionAdded: '0.53'
-  AllowBorderComment: true
-  AllowMarginComment: true
+  AllowBorderComment: false
+  AllowMarginComment: false
 
 Layout/EmptyLineAfterGuardClause:
   Description: 'Add empty line after guard clause.'
@@ -482,7 +482,7 @@ Layout/EmptyLinesAroundAccessModifier:
 
 Layout/EmptyLinesAroundArguments:
   Description: "Keeps track of empty lines around method arguments."
-  Enabled: false
+  Enabled: true
   VersionAdded: '0.52'
 
 Layout/EmptyLinesAroundBeginBody:
@@ -542,7 +542,7 @@ Layout/EmptyLinesAroundModuleBody:
 
 Layout/EndAlignment:
   Description: 'Align ends correctly.'
-  Enabled: false
+  Enabled: true
   VersionAdded: '0.53'
   # The value `keyword` means that `end` should be aligned with the matching
   # keyword (`if`, `while`, etc.).
@@ -602,7 +602,7 @@ Layout/FirstMethodArgumentLineBreak:
   Description: >-
                  Checks for a line break before the first argument in a
                  multi-line method call.
-  Enabled: false
+  Enabled: true
   VersionAdded: '0.49'
 
 Layout/FirstMethodParameterLineBreak:
@@ -792,7 +792,7 @@ Layout/MultilineAssignmentLayout:
 
 Layout/MultilineBlockLayout:
   Description: 'Ensures newlines after multiline block do statements.'
-  Enabled: false
+  Enabled: true
   VersionAdded: '0.49'
 
 Layout/MultilineHashBraceLayout:
@@ -950,7 +950,7 @@ Layout/SpaceBeforeBlockBraces:
   Description: >-
                  Checks that the left block brace has or doesn't have space
                  before it.
-  Enabled: false
+  Enabled: true
   VersionAdded: '0.49'
   EnforcedStyle: space
   SupportedStyles:
@@ -964,14 +964,14 @@ Layout/SpaceBeforeBlockBraces:
 
 Layout/SpaceBeforeComma:
   Description: 'No spaces before commas.'
-  Enabled: false
+  Enabled: true
   VersionAdded: '0.49'
 
 Layout/SpaceBeforeComment:
   Description: >-
                  Checks for missing space between code and a comment on the
                  same line.
-  Enabled: false
+  Enabled: true
   VersionAdded: '0.49'
 
 Layout/SpaceBeforeFirstArg:
@@ -987,12 +987,12 @@ Layout/SpaceBeforeFirstArg:
 
 Layout/SpaceBeforeSemicolon:
   Description: 'No spaces before semicolons.'
-  Enabled: false
+  Enabled: true
   VersionAdded: '0.49'
 
 Layout/SpaceInLambdaLiteral:
   Description: 'Checks for spaces in lambda literals.'
-  Enabled: false
+  Enabled: true
   VersionAdded: '0.49'
   EnforcedStyle: require_no_space
   SupportedStyles:
@@ -1001,7 +1001,7 @@ Layout/SpaceInLambdaLiteral:
 
 Layout/SpaceInsideArrayLiteralBrackets:
   Description: 'Checks the spacing inside array literal brackets.'
-  Enabled: false
+  Enabled: true
   VersionAdded: '0.52'
   EnforcedStyle: no_space
   SupportedStyles:
@@ -1025,7 +1025,7 @@ Layout/SpaceInsideBlockBraces:
                  Checks that block braces have or don't have surrounding space.
                  For blocks taking parameters, checks that the left brace has
                  or doesn't have trailing space.
-  Enabled: false
+  Enabled: true
   VersionAdded: '0.49'
   EnforcedStyle: space
   SupportedStyles:
@@ -1069,7 +1069,7 @@ Layout/SpaceInsideParens:
 
 Layout/SpaceInsidePercentLiteralDelimiters:
   Description: 'No unnecessary spaces inside delimiters of %i/%w/%x literals.'
-  Enabled: false
+  Enabled: true
   VersionAdded: '0.49'
 
 Layout/SpaceInsideRangeLiteral:
@@ -1080,7 +1080,7 @@ Layout/SpaceInsideRangeLiteral:
 
 Layout/SpaceInsideReferenceBrackets:
   Description: 'Checks the spacing inside referential brackets.'
-  Enabled: false
+  Enabled: true
   VersionAdded: '0.52'
   VersionChanged: '0.53'
   EnforcedStyle: no_space
@@ -1289,7 +1289,7 @@ Lint/IneffectiveAccessModifier:
 
 Lint/InheritException:
   Description: 'Avoid inheriting from the `Exception` class.'
-  Enabled: false
+  Enabled: true
   VersionAdded: '0.41'
   # The default base class in favour of `Exception`.
   EnforcedStyle: runtime_error
@@ -1299,7 +1299,7 @@ Lint/InheritException:
 
 Lint/InterpolationCheck:
   Description: 'Raise warning for interpolation in single q strs'
-  Enabled: false
+  Enabled: true
   VersionAdded: '0.50'
 
 Lint/LiteralAsCondition:
@@ -1484,7 +1484,7 @@ Lint/ShadowedException:
   Description: >-
                   Avoid rescuing a higher level exception
                   before a lower level exception.
-  Enabled: false
+  Enabled: true
   VersionAdded: '0.41'
 
 Lint/ShadowingOuterLocalVariable:
@@ -1514,7 +1514,7 @@ Lint/UnderscorePrefixedVariableName:
 
 Lint/UnifiedInteger:
   Description: 'Use Integer instead of Fixnum or Bignum'
-  Enabled: false
+  Enabled: true
   VersionAdded: '0.43'
 
 Lint/UnneededCopDisableDirective:
@@ -1621,7 +1621,7 @@ Metrics/AbcSize:
                  A calculated magnitude based on number of assignments,
                  branches, and conditions.
   Reference: 'http://c2.com/cgi/wiki?AbcMetric'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.27'
   # The ABC size is a calculated magnitude, so this number can be an Integer or
   # a Float.
@@ -1629,7 +1629,7 @@ Metrics/AbcSize:
 
 Metrics/BlockLength:
   Description: 'Avoid long blocks with many lines.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.44'
   VersionChanged: '0.58'
   CountComments: false  # count full line comments?
@@ -1650,7 +1650,7 @@ Metrics/BlockNesting:
 
 Metrics/ClassLength:
   Description: 'Avoid classes longer than 100 lines of code.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.25'
   CountComments: false  # count full line comments?
   Max: 100
@@ -1660,7 +1660,7 @@ Metrics/CyclomaticComplexity:
   Description: >-
                  A complexity metric that is strongly correlated to the number
                  of test cases needed to validate a method.
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.25'
   Max: 6
 
@@ -1698,7 +1698,7 @@ Metrics/MethodLength:
 
 Metrics/ModuleLength:
   Description: 'Avoid modules longer than 100 lines of code.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.31'
   CountComments: false  # count full line comments?
   Max: 100
@@ -1715,7 +1715,7 @@ Metrics/PerceivedComplexity:
   Description: >-
                  A complexity metric geared towards measuring complexity for a
                  human reader.
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.25'
   Max: 7
 
@@ -1836,7 +1836,7 @@ Naming/HeredocDelimiterNaming:
 Naming/MemoizedInstanceVariableName:
   Description: >-
     Memoized method name should match memo instance variable name.
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.53'
   VersionChanged: '0.58'
   EnforcedStyleForLeadingUnderscores: disallowed
@@ -1888,7 +1888,7 @@ Naming/UncommunicativeBlockParamName:
   Description: >-
                 Checks for block parameter names that contain capital letters,
                 end in numbers, or do not meet a minimal length.
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.53'
   # Parameter names may be equal to or greater than this value
   MinNameLength: 1
@@ -1902,7 +1902,7 @@ Naming/UncommunicativeMethodParamName:
   Description: >-
                 Checks for method parameter names that contain capital letters,
                 end in numbers, or do not meet a minimal length.
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.53'
   VersionChanged: '0.59'
   # Parameter names may be equal to or greater than this value
@@ -1948,7 +1948,7 @@ Naming/VariableNumber:
 Performance/Caller:
   Description: >-
              Use `caller(n..n)` instead of `caller`.
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.49'
 
 Performance/CaseWhenSplat:
@@ -1965,7 +1965,7 @@ Performance/Casecmp:
   Description: >-
              Use `casecmp` rather than `downcase ==`, `upcase ==`, `== downcase`, or `== upcase`..
   Reference: 'https://github.com/JuanitoFatas/fast-ruby#stringcasecmp-vs-stringdowncase---code'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.36'
 
 Performance/ChainArrayAllocation:
@@ -1978,7 +1978,7 @@ Performance/ChainArrayAllocation:
 
 Performance/CompareWithBlock:
   Description: 'Use `sort_by(&:foo)` instead of `sort { |a, b| a.foo <=> b.foo }`.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.46'
 
 Performance/Count:
@@ -1991,7 +1991,7 @@ Performance/Count:
   # For more information, see the documentation in the cop itself.
   # If you understand the known risk, you can disable `SafeMode`.
   SafeMode: true
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.31'
   VersionChanged: '0.39'
 
@@ -2005,7 +2005,7 @@ Performance/Detect:
   # has its own meaning. Correcting `ActiveRecord` methods with this cop
   # should be considered unsafe.
   SafeMode: true
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.30'
   VersionChanged: '0.39'
 
@@ -2013,7 +2013,7 @@ Performance/DoubleStartEndWith:
   Description: >-
                   Use `str.{start,end}_with?(x, ..., y, ...)`
                   instead of `str.{start,end}_with?(x, ...) || str.{start,end}_with?(y, ...)`.
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.36'
   VersionChanged: '0.48'
   # Used to check for `starts_with?` and `ends_with?`.
@@ -2028,13 +2028,13 @@ Performance/EndWith:
   # of the variables which rubocop doesn't have.
   SafeAutoCorrect: false
   AutoCorrect: false
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.36'
   VersionChanged: '0.44'
 
 Performance/FixedSize:
   Description: 'Do not compute the size of statically sized objects except in constants'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.35'
 
 Performance/FlatMap:
@@ -2060,7 +2060,7 @@ Performance/InefficientHashSearch:
 
 Performance/LstripRstrip:
   Description: 'Use `strip` instead of `lstrip.rstrip`.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.36'
 
 Performance/OpenStruct:
@@ -2072,33 +2072,33 @@ Performance/OpenStruct:
 Performance/RangeInclude:
   Description: 'Use `Range#cover?` instead of `Range#include?`.'
   Reference: 'https://github.com/JuanitoFatas/fast-ruby#cover-vs-include-code'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.36'
 
 Performance/RedundantBlockCall:
   Description: 'Use `yield` instead of `block.call`.'
   Reference: 'https://github.com/JuanitoFatas/fast-ruby#proccall-and-block-arguments-vs-yieldcode'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.36'
 
 Performance/RedundantMatch:
   Description: >-
                   Use `=~` instead of `String#match` or `Regexp#match` in a context where the
                   returned `MatchData` is not needed.
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.36'
 
 Performance/RedundantMerge:
   Description: 'Use Hash#[]=, rather than Hash#merge! with a single key-value pair.'
   Reference: 'https://github.com/JuanitoFatas/fast-ruby#hashmerge-vs-hash-code'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.36'
   # Max number of key-value pairs to consider an offense
   MaxKeyValuePairs: 2
 
 Performance/RedundantSortBy:
   Description: 'Use `sort` instead of `sort_by { |x| x }`.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.36'
 
 Performance/RegexpMatch:
@@ -2106,7 +2106,7 @@ Performance/RegexpMatch:
                   Use `match?` instead of `Regexp#match`, `String#match`, `Symbol#match`,
                   `Regexp#===`, or `=~` when `MatchData` is not used.
   Reference: 'https://github.com/JuanitoFatas/fast-ruby#regexp-vs-stringmatch-vs-string-vs-stringmatch-code-'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.47'
 
 Performance/ReverseEach:
@@ -2120,7 +2120,7 @@ Performance/Sample:
                   Use `sample` instead of `shuffle.first`,
                   `shuffle.last`, and `shuffle[Integer]`.
   Reference: 'https://github.com/JuanitoFatas/fast-ruby#arrayshufflefirst-vs-arraysample-code'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.30'
 
 Performance/Size:
@@ -2139,7 +2139,7 @@ Performance/StartWith:
   # of the variables which rubocop doesn't have.
   SafeAutoCorrect: false
   AutoCorrect: false
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.36'
   VersionChanged: '0.44'
 
@@ -2155,26 +2155,26 @@ Performance/StringReplacement:
 Performance/TimesMap:
   Description: 'Checks for .times.map calls.'
   AutoCorrect: false
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.36'
   VersionChanged: '0.50'
   SafeAutoCorrect: false # see https://github.com/rubocop-hq/rubocop/issues/4658
 
 Performance/UnfreezeString:
   Description: 'Use unary plus to get an unfrozen string literal.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.50'
 
 Performance/UnneededSort:
   Description: >-
                   Use `min` instead of `sort.first`,
                   `max_by` instead of `sort_by...last`, etc.
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.55'
 
 Performance/UriDefaultParser:
   Description: 'Use `URI::DEFAULT_PARSER` instead of `URI::Parser.new`.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.50'
 
 #################### Rails #################################
