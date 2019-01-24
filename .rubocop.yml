@@ -2200,7 +2200,7 @@ Rails/ActiveRecordAliases:
                   Avoid Active Record aliases:
                   Use `update` instead of `update_attributes`.
                   Use `update!` instead of `update_attributes!`.
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.53'
 
 Rails/ActiveSupportAliases:
@@ -2213,24 +2213,24 @@ Rails/ActiveSupportAliases:
 
 Rails/ApplicationJob:
   Description: 'Check that jobs subclass ApplicationJob.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.49'
 
 Rails/ApplicationRecord:
   Description: 'Check that models subclass ApplicationRecord.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.49'
 
 Rails/AssertNot:
   Description: 'Use `assert_not` instead of `assert !`.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.56'
   Include:
     - '**/test/**/*'
 
 Rails/Blank:
   Description: 'Enforces use of `blank?`.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.48'
   # Convert usages of `nil? || empty?` to `blank?`
   NilOrEmpty: true
@@ -2241,7 +2241,7 @@ Rails/Blank:
 
 Rails/BulkChangeTable:
   Description: 'Check whether alter queries are combinable.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.57'
   Database: null
   SupportedDatabases:
@@ -2263,7 +2263,7 @@ Rails/Date:
   Description: >-
                   Checks the correct usage of date aware methods,
                   such as Date.today, Date.current etc.
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.30'
   VersionChanged: '0.33'
   # The value `strict` disallows usage of `Date.today`, `Date.current`,
@@ -2278,7 +2278,7 @@ Rails/Date:
 
 Rails/Delegate:
   Description: 'Prefer delegate method for delegations.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.21'
   VersionChanged: '0.50'
   # When set to true, using the target object as a prefix of the
@@ -2288,7 +2288,7 @@ Rails/Delegate:
 
 Rails/DelegateAllowBlank:
   Description: 'Do not use allow_blank as an option to delegate.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.44'
 
 Rails/DynamicFindBy:
@@ -2301,14 +2301,14 @@ Rails/DynamicFindBy:
 
 Rails/EnumUniqueness:
   Description: 'Avoid duplicate integers in hash-syntax `enum` declaration.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.46'
   Include:
     - app/models/**/*.rb
 
 Rails/EnvironmentComparison:
   Description: "Favor `Rails.env.production?` over `Rails.env == 'production'`"
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.52'
 
 Rails/Exit:
@@ -2316,7 +2316,7 @@ Rails/Exit:
                   Favor `fail`, `break`, `return`, etc. over `exit` in
                   application or library code outside of Rake files to avoid
                   exits during unit testing or running in production.
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.41'
   Include:
     - app/**/*.rb
@@ -2369,7 +2369,7 @@ Rails/HasManyOrHasOneDependent:
 
 Rails/HttpPositionalArguments:
   Description: 'Use keyword arguments instead of positional arguments in http method calls.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.44'
   Include:
     - 'spec/**/*'
@@ -2386,7 +2386,7 @@ Rails/HttpStatus:
 
 Rails/InverseOf:
   Description: 'Checks for associations where the inverse cannot be determined automatically.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.52'
   Include:
     - app/models/**/*.rb
@@ -2401,14 +2401,14 @@ Rails/LexicallyScopedActionFilter:
 
 Rails/NotNullColumn:
   Description: 'Do not add a NOT NULL column without a default value'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.43'
   Include:
     - db/migrate/*.rb
 
 Rails/Output:
   Description: 'Checks for calls to puts, print, etc.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.15'
   VersionChanged: '0.19'
   Include:
@@ -2419,22 +2419,22 @@ Rails/Output:
 
 Rails/OutputSafety:
   Description: 'The use of `html_safe` or `raw` may be a security risk.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.41'
 
 Rails/PluralizationGrammar:
   Description: 'Checks for incorrect grammar when using methods like `3.day.ago`.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.35'
 
 Rails/Presence:
   Description: 'Checks code that can be written more easily using `Object#presence` defined by Active Support.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.52'
 
 Rails/Present:
   Description: 'Enforces use of `present?`.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.48'
   # Convert usages of `!nil? && !empty?` to `present?`
   NotNilAndNotEmpty: true
@@ -2456,26 +2456,26 @@ Rails/ReadWriteAttribute:
 
 Rails/RedundantReceiverInWithOptions:
   Description: 'Checks for redundant receiver in `with_options`.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.52'
 
 Rails/RefuteMethods:
   Description: 'Use `assert_not` methods instead of `refute` methods.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.56'
   Include:
     - '**/test/**/*'
 
 Rails/RelativeDateConstant:
   Description: 'Do not assign relative date to constants.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.48'
   VersionChanged: '0.59'
   AutoCorrect: false
 
 Rails/RequestReferer:
   Description: 'Use consistent syntax for request.referer.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.41'
   EnforcedStyle: referer
   SupportedStyles:
@@ -2555,7 +2555,7 @@ Rails/TimeZone:
 
 Rails/UniqBeforePluck:
   Description: 'Prefer the use of uniq or distinct before pluck.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.40'
   VersionChanged: '0.47'
   EnforcedStyle: conservative
@@ -2566,7 +2566,7 @@ Rails/UniqBeforePluck:
 
 Rails/UnknownEnv:
   Description: 'Use correct environment name.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.51'
   Environments:
     - development
