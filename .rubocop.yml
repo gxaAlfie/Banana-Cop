@@ -2683,7 +2683,7 @@ Style/Attr:
 
 Style/AutoResourceCleanup:
   Description: 'Suggests the usage of an auto resource cleanup version of a method (if available).'
-  Enabled: false
+  Enabled: true
   VersionAdded: '0.30'
 
 Style/BarePercentLiterals:
@@ -2875,7 +2875,7 @@ Style/ClassVars:
 Style/CollectionMethods:
   Description: 'Preferred collection methods.'
   StyleGuide: '#map-find-select-reduce-size'
-  Enabled: false
+  Enabled: true
   VersionAdded: '0.9'
   VersionChanged: '0.27'
   Safe: false
@@ -2991,7 +2991,7 @@ Style/Copyright:
 Style/DateTime:
   Description: 'Use Time over DateTime.'
   StyleGuide: '#date--time'
-  Enabled: false
+  Enabled: true
   VersionAdded: '0.51'
   VersionChanged: '0.59'
   AllowCoercion: false
@@ -3007,12 +3007,12 @@ Style/Dir:
   Description: >-
                  Use the `__dir__` method to retrieve the canonicalized
                  absolute path to the current file.
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.50'
 
 Style/Documentation:
   Description: 'Document classes and non-namespace modules.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.9'
   Exclude:
     - 'spec/**/*'
@@ -3037,12 +3037,12 @@ Style/EachForSimpleLoop:
   Description: >-
                  Use `Integer#times` for a simple loop which iterates a fixed
                  number of times.
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.41'
 
 Style/EachWithObject:
   Description: 'Prefer `each_with_object` over `inject` or `reduce`.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.22'
   VersionChanged: '0.42'
 
@@ -3119,7 +3119,7 @@ Style/EvenOdd:
 
 Style/ExpandPathArguments:
   Description: "Use `expand_path(__dir__)` instead of `expand_path('..', __FILE__)`."
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.53'
 
 Style/FlipFlop:
@@ -3169,7 +3169,7 @@ Style/FrozenStringLiteralComment:
   Description: >-
                  Add the frozen_string_literal comment to the top of files
                  to help transition from Ruby 2.3.0 to Ruby 3.0.
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.36'
   VersionChanged: '0.47'
   EnforcedStyle: when_needed
@@ -3233,12 +3233,12 @@ Style/IdenticalConditionalBranches:
                  Checks that conditional statements do not have an identical
                  line at the end of each branch, which can validly be moved
                  out of the conditional.
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.36'
 
 Style/IfInsideElse:
   Description: 'Finds if nodes inside else, which can be converted to elsif.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.36'
 
 Style/IfUnlessModifier:
@@ -3351,7 +3351,7 @@ Style/LineEndConcatenation:
 Style/MethodCallWithArgsParentheses:
   Description: 'Use parentheses for method calls with arguments.'
   StyleGuide: '#method-invocation-parens'
-  Enabled: false
+  Enabled: true
   VersionAdded: '0.47'
   VersionChanged: '0.61'
   IgnoreMacros: true
@@ -3374,7 +3374,7 @@ Style/MethodCallWithoutArgsParentheses:
 Style/MethodCalledOnDoEndBlock:
   Description: 'Avoid chaining a method call on a do...end block.'
   StyleGuide: '#single-line-blocks'
-  Enabled: false
+  Enabled: true
   VersionAdded: '0.14'
 
 Style/MethodDefParentheses:
@@ -3401,7 +3401,7 @@ Style/MinMax:
   Description: >-
                  Use `Enumerable#minmax` instead of `Enumerable#min`
                  and `Enumerable#max` in conjunction.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.50'
 
 Style/MissingElse:
@@ -3481,7 +3481,7 @@ Style/MultilineIfThen:
 
 Style/MultilineMemoization:
   Description: 'Wrap multiline memoizations in a `begin` and `end` block.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.44'
   VersionChanged: '0.48'
   EnforcedStyle: keyword
@@ -3506,12 +3506,12 @@ Style/MultipleComparison:
   Description: >-
                  Avoid comparing a variable with multiple items in a conditional,
                  use Array#include? instead.
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.49'
 
 Style/MutableConstant:
   Description: 'Do not assign mutable objects to constants.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.34'
 
 Style/NegatedIf:
@@ -3681,7 +3681,7 @@ Style/OneLineConditional:
 
 Style/OptionHash:
   Description: "Don't use option hashes when you can use keyword arguments."
-  Enabled: false
+  Enabled: true
   VersionAdded: '0.33'
   VersionChanged: '0.34'
   # A list of parameter names that will be flagged by this cop.
@@ -3804,7 +3804,7 @@ Style/RedundantBegin:
 
 Style/RedundantConditional:
   Description: "Don't return true/false from a conditional."
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.50'
 
 Style/RedundantException:
@@ -3816,12 +3816,12 @@ Style/RedundantException:
 
 Style/RedundantFreeze:
   Description: "Checks usages of Object#freeze on immutable objects."
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.34'
 
 Style/RedundantParentheses:
   Description: "Checks for parentheses that seem not to serve any purpose."
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.36'
 
 Style/RedundantReturn:
@@ -3878,7 +3878,7 @@ Style/RescueStandardError:
 
 Style/ReturnNil:
   Description: 'Use return instead of return nil.'
-  Enabled: false
+  Enabled: true
   EnforcedStyle: return
   SupportedStyles:
     - return
@@ -4013,7 +4013,7 @@ Style/StringLiteralsInInterpolation:
   Description: >-
                  Checks if uses of quotes inside expressions in interpolated
                  strings match the configured preference.
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.27'
   EnforcedStyle: single_quotes
   SupportedStyles:
@@ -4054,7 +4054,7 @@ Style/SymbolArray:
 
 Style/SymbolLiteral:
   Description: 'Use plain symbols instead of string symbols when possible.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.30'
 
 Style/SymbolProc:
@@ -4070,7 +4070,7 @@ Style/SymbolProc:
 
 Style/TernaryParentheses:
   Description: 'Checks for use of parentheses around ternary conditions.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.42'
   VersionChanged: '0.46'
   EnforcedStyle: require_no_parentheses
@@ -4209,7 +4209,7 @@ Style/UnlessElse:
 
 Style/UnneededCapitalW:
   Description: 'Checks for %W when interpolation is not needed.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.21'
   VersionChanged: '0.24'
 
@@ -4233,7 +4233,7 @@ Style/UnpackFirst:
   Description: >-
                  Checks for accessing the first element of `String#unpack`
                  instead of using `unpack1`
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.54'
 
 Style/VariableInterpolation:
