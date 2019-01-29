@@ -1708,7 +1708,7 @@ Metrics/ParameterLists:
   StyleGuide: '#too-many-params'
   Enabled: true
   VersionAdded: '0.25'
-  Max: 5
+  Max: 3
   CountKeywordArgs: true
 
 Metrics/PerceivedComplexity:
