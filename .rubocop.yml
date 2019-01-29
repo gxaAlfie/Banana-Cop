@@ -1292,7 +1292,7 @@ Lint/InheritException:
   Enabled: true
   VersionAdded: '0.41'
   # The default base class in favour of `Exception`.
-  EnforcedStyle: runtime_error
+  EnforcedStyle: standard_error
   SupportedStyles:
     - runtime_error
     - standard_error
