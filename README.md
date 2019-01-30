@@ -10,7 +10,7 @@ In the project's `Gemfile`, add this to the `development` and `test` group.
 ```ruby
 group :development, :test do
   ...
-  gem rubocop, '~> 0.61.1', require: false
+  gem 'rubocop', '~> 0.61.1', require: false
 end
 ```
 
