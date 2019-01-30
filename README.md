@@ -5,10 +5,10 @@ This repository is used as version control for team rubocop settings. Most recen
 
 # Setup Rubocop
 ## Install Rubocop Gem
-In the project's `Gemfile`, add this to the `development` and `test` group.
+In the project's `Gemfile`, add this to the `development` group.
 
 ```ruby
-group :development, :test do
+group :development do
   ...
   gem 'rubocop', '~> 0.61.1', require: false
 end
