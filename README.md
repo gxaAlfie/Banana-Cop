@@ -1,20 +1,34 @@
 # Rubocop Settings
-
-This repository is used as version control for team rubocop settings.
-
-# Installation
-## Install Rubocop Gem
 > RuboCop's development is moving at a very rapid pace and there are often backward-incompatible changes between minor releases (since we haven't reached version 1.0 yet). To prevent an unwanted RuboCop update you might want to use a conservative version locking in your `Gemfile`.
 
-Most recent customization for `rubocop.yml` is based off `rubocop v0.61.1`.
+This repository is used as version control for team rubocop settings. Most recent customization for `rubocop.yml` is based off `rubocop v0.61.1`.
 
-In the `Gemfile`, add this to the `development` group
+# Setup Rubocop
+## Install Rubocop Gem
+In the project's `Gemfile`, add this to the `development` and `test` group.
 
-```sh
-gem install rubocop -v 0.61.1
+```ruby
+group :development, :test do
+  ...
+  gem rubocop, '~> 0.61.1', require: false
+end
 ```
 
-## Download Rubocop Settings
+Run the command in the terminal to install the gem for the project
+```
+bundle install
+```
+
+## Setup Rubocop Settings
+Clone the repository in any directory
+```
+git clone https://github.com/gxaAlfie/Rubocop-Settings.git
+```
+
+Copy the Rubocop Configuration file to the home directory
+```
+cp ~/Path/To/Rubocop-Settings/.rubocop.yml ~/.rubocop.yml
+```
 
 # Usage
 ## How to Run
