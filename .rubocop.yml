@@ -1192,7 +1192,7 @@ Lint/DeprecatedClassMethods:
   VersionAdded: '0.19'
 
 Lint/DisjunctiveAssignmentInConstructor:
-  Description: 'In constructor, plain assigment is preferred over disjunctive'
+  Description: 'In constructor, plain assignment is preferred over disjunctive.'
   Enabled: true
   Safe: false
   VersionAdded: '0.62'
@@ -1262,7 +1262,7 @@ Lint/ErbNewArguments:
   VersionAdded: '0.56'
 
 Lint/FlipFlop:
-  Description: 'Checks for flip flops'
+  Description: 'Checks for flip-flops'
   StyleGuide: '#no-flip-flops'
   Enabled: true
   VersionAdded: '0.16'
