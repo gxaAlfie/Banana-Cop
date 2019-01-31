@@ -1,7 +1,7 @@
 # Rubocop Settings
 > RuboCop's development is moving at a very rapid pace and there are often backward-incompatible changes between minor releases (since we haven't reached version 1.0 yet). To prevent an unwanted RuboCop update you might want to use a conservative version locking in your `Gemfile`.
 
-This repository is used as version control for team rubocop settings. Most recent customization for `rubocop.yml` is based off `rubocop v0.61.1`.
+This repository is used as version control for team rubocop settings. Most recent customization for `rubocop.yml` is based off `rubocop v0.63.1`.
 
 # Setup Rubocop
 ## Install Rubocop Gem
@@ -10,7 +10,7 @@ In the project's `Gemfile`, add this to the `development` group.
 ```ruby
 group :development do
   ...
-  gem 'rubocop', '~> 0.61.1', require: false
+  gem 'rubocop', '~> 0.63.1', require: false
 end
 ```
 
