@@ -1,7 +1,7 @@
-# Rubocop Settings
+# Banana Cop
 > RuboCop's development is moving at a very rapid pace and there are often backward-incompatible changes between minor releases (since we haven't reached version 1.0 yet). To prevent an unwanted RuboCop update you might want to use a conservative version locking in your `Gemfile`.
 
-This repository is used as version control for team rubocop settings. Most recent customization for `rubocop.yml` is based off `rubocop v0.63.1`.
+This repository is used as version control for Team Banana's Rubocop Settings. Most recent customization for `rubocop.yml` is based off `rubocop v0.63.1`.
 
 # Setup Rubocop
 ## Install Rubocop Gem
@@ -22,12 +22,12 @@ bundle install
 ## Setup Rubocop Settings
 Clone the repository in any directory
 ```
-git clone https://github.com/gxaAlfie/Rubocop-Settings.git
+git clone https://github.com/gxaAlfie/Banana-Cop.git
 ```
 
 Copy the Rubocop Configuration file to the home directory
 ```
-cp ~/Path/To/Rubocop-Settings/.rubocop.yml ~/.rubocop.yml
+cp ~/Path/To/Banana-Cop/.rubocop.yml ~/.rubocop.yml
 ```
 
 # Usage
