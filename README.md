@@ -25,9 +25,9 @@ Clone the repository in any directory
 git clone https://github.com/gxaAlfie/Banana-Cop.git
 ```
 
-Copy the Rubocop Configuration file to the home directory
+Link the Rubocop Configuration File to the Home Diretory
 ```
-cp ~/Path/To/Banana-Cop/.rubocop.yml ~/.rubocop.yml
+ln ~/Path/To/Banana-Cop/.rubocop.yml ~/.rubocop.yml
 ```
 
 # Usage
